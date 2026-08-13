@@ -19,7 +19,7 @@ export type MenuCategory = {
   items: MenuItem[];
 };
 
-export const WHATSAPP_NUMBER = "5514999999999";
+export const WHATSAPP_NUMBER = "5511949423560";
 
 export const categories: MenuCategory[] = [
   {
