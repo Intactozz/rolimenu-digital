@@ -342,7 +342,10 @@ function Index() {
             <span className="font-display text-base font-bold text-foreground">Rolih Pasteis</span>
           </div>
           <p>Rua Doutor Carlos Ubaldino Bueno de Abreu, 175 · Todos os dias, 16h às 00h</p>
-          <p>WhatsApp (14) 99999-9999 · contato@rolihpasteis.com.br</p>
+          <p>
+            WhatsApp +{WHATSAPP_NUMBER.slice(0, 2)} ({WHATSAPP_NUMBER.slice(2, 4)}){" "}
+            {WHATSAPP_NUMBER.slice(4, 9)}-{WHATSAPP_NUMBER.slice(9)} · contato@rolihpasteis.com.br
+          </p>
           <p className="text-xs">
             © {new Date().getFullYear()} Rolih Pasteis. Todos os direitos reservados.
           </p>
