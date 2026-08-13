@@ -162,12 +162,15 @@ export const categories: MenuCategory[] = [
   },
 ];
 
-export const highlights = [
-  categories[1].items[0],
-  categories[0].items[2],
-  categories[2].items[0],
-  categories[3].items[0],
-];
+export const highlights: MenuItem[] = [
+  "e-frango-requeijao",
+  "t-carne",
+  "m-alho",
+  "b-caldo",
+]
+  .map((id) => categories.flatMap((c) => c.items).find((item) => item.id === id))
+  .filter((item): item is MenuItem => Boolean(item));
+
 
 export const formatPrice = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
