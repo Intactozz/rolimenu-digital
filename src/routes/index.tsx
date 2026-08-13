@@ -69,7 +69,7 @@ function Index() {
   const whatsappHref = useMemo(() => {
     const body =
       lines.length === 0
-        ? "Olá! Gostaria de fazer um pedido na Rolih Pasteis."
+        ? "Olá! Gostaria de fazer um pedido no Rolih Pasteis."
         : [
             "Olá, Rolih Pasteis! Gostaria de pedir:",
             "",
@@ -174,7 +174,7 @@ function Index() {
               </a>
             </div>
             <p className="mt-5 flex items-center gap-2 text-sm text-muted-foreground">
-              <Clock className="h-4 w-4 text-primary" /> Aberto todos os dias, das 16h às 00h
+              <Clock className="h-4 w-4 text-primary" /> Aberto de terça a domingo, das 16h às 00h
             </p>
           </Reveal>
         </div>
@@ -272,7 +272,7 @@ function Index() {
             <div className="h-full rounded-2xl border border-border/70 bg-card p-6 shadow-card">
               <Clock className="h-6 w-6 text-primary" />
               <h3 className="mt-3 text-xl font-semibold">Horário</h3>
-              <p className="mt-2 text-muted-foreground">Todos os dias, das 16h às 00h.</p>
+              <p className="mt-2 text-muted-foreground">Terça a domingo, das 16h às 00h.</p>
               <p className="mt-1 text-sm text-muted-foreground">
                 Últimos pedidos até 23h40. Retirada e delivery na região.
               </p>
@@ -316,7 +316,7 @@ function Index() {
               Finalizar no WhatsApp
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/rolih_pasteis/"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram da Rolih Pasteis"
@@ -341,10 +341,10 @@ function Index() {
             <img src={logo} alt="" width={816} height={816} loading="lazy" className="h-8 w-8" />
             <span className="font-display text-base font-bold text-foreground">Rolih Pasteis</span>
           </div>
-          <p>Rua Doutor Carlos Ubaldino Bueno de Abreu, 175 · Todos os dias, 16h às 00h</p>
+          <p>Rua Doutor Carlos Ubaldino Bueno de Abreu, 175 · De terça a domingo, 16h às 00h</p>
           <p>
             WhatsApp +{WHATSAPP_NUMBER.slice(0, 2)} ({WHATSAPP_NUMBER.slice(2, 4)}){" "}
-            {WHATSAPP_NUMBER.slice(4, 9)}-{WHATSAPP_NUMBER.slice(9)} · contato@rolihpasteis.com.br
+            {WHATSAPP_NUMBER.slice(4, 9)}-{WHATSAPP_NUMBER.slice(9)} · 
           </p>
           <p className="text-xs">
             © {new Date().getFullYear()} Rolih Pasteis. Todos os direitos reservados.

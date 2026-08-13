@@ -1,7 +1,17 @@
-import carne from "@/assets/pastel-carne.jpg";
-import queijo from "@/assets/pastel-queijo.jpg";
-import frango from "@/assets/pastel-frango.jpg";
-import bebidasImg from "@/assets/bebidas.jpg";
+import carne from "@/assets/pastel-carne.jpeg";
+import fantaUva from "@/assets/fanta-uva.webp";
+import coca from "@/assets/coca-cola.webp";
+import sprite from "@/assets/sprite.webp";
+import carneq from "@/assets/pastel-carne-queijo.png";
+import molhoRolih from "@/assets/molho-rolih.png";
+import rolih from "@/assets/pastel-especial-rolih.png";
+import carneovo from "@/assets/pastel-carne-ovo.png";
+import bauru from "@/assets/pastel-bauru.png";
+import frangoq from "@/assets/pastel-frango-queijo.png";
+import pizza from "@/assets/pastel-pizza.png";
+import queijo from "@/assets/pastel-queijo.png";
+import frango from "@/assets/pastel-frango.png";
+import requeijao from "@/assets/frango-requeijao.png";
 
 export type MenuItem = {
   id: string;
@@ -30,7 +40,7 @@ export const categories: MenuCategory[] = [
       {
         id: "t-frango",
         name: "Pastel de Frango",
-        description: "Frango desfiado temperado na hora com cheiro-verde e milho.",
+        description: "Frango desfiado temperado e soltinho na hora.",
         price: 13,
         image: frango,
       },
@@ -39,11 +49,12 @@ export const categories: MenuCategory[] = [
         name: "Pastel Bauru",
         description: "Presunto, queijo mussarela e rodela de tomate com orégano.",
         price: 13,
+        image: bauru,
       },
       {
         id: "t-carne",
         name: "Pastel de Carne",
-        description: "Carne moída suculenta refogada com cebola e temperos da casa.",
+        description: "Carne moída suculenta refogada com temperos da casa.",
         price: 15,
         image: carne,
         tag: "Mais pedido",
@@ -58,8 +69,9 @@ export const categories: MenuCategory[] = [
       {
         id: "t-pizza",
         name: "Pastel de Pizza",
-        description: "Mussarela, tomate, presunto e orégano — a pizza em formato de pastel.",
+        description: "Mussarela, tomate e orégano — a pizza em formato de pastel.",
         price: 15,
+        image: pizza,
       },
     ],
   },
@@ -73,7 +85,7 @@ export const categories: MenuCategory[] = [
         name: "Frango com Requeijão",
         description: "Frango desfiado com requeijão cremoso derretendo a cada mordida.",
         price: 18,
-        image: frango,
+        image: requeijao,
         tag: "Favorito da casa",
       },
       {
@@ -81,19 +93,28 @@ export const categories: MenuCategory[] = [
         name: "Frango com Queijo",
         description: "Frango temperado e mussarela em camadas bem servidas.",
         price: 18,
+        image: frangoq,
       },
       {
         id: "e-carne-queijo",
         name: "Carne com Queijo",
-        description: "Carne moída da casa com mussarela cremosa e pimenta opcional.",
+        description: "Carne moída da casa bem temperada com mussarela cremosa.",
         price: 18,
-        image: carne,
+        image: carneq,
       },
       {
         id: "e-carne-ovo",
         name: "Carne com Ovo",
-        description: "Carne moída, ovo cozido e azeitona — receita de família.",
+        description: "Carne moída bem temperada e soltinha com ovo cozido no dia — receita de família.",
         price: 18,
+        image: carneovo,
+      },
+      {
+        id: "e-especial-rolih",
+        name: "Especial Rolih",
+        description: "Recheio especial com ingredientes premium, feito com carne moída soltinha e bem temperada,ovo cozido no dia e mussarela.",
+        price: 20,
+        image: rolih,
       },
     ],
   },
@@ -103,29 +124,13 @@ export const categories: MenuCategory[] = [
     subtitle: "Nossa assinatura: cada pastel merece o molho certo",
     items: [
       {
-        id: "m-alho",
-        name: "Molho de Alho Rolih",
+        id: "m-verde",
+        name: "Molho Verde Rolih",
         description: "Cremoso, encorpado e levemente tostado. O queridinho da galera.",
-        price: 5,
+        price: 3,
+        image: molhoRolih,
       },
-      {
-        id: "m-pimenta",
-        name: "Pimenta Artesanal",
-        description: "Pimenta dedo-de-moça curtida no azeite com alho.",
-        price: 5,
-      },
-      {
-        id: "m-barbecue",
-        name: "Barbecue Defumado",
-        description: "Agridoce na medida, com toque defumado de páprica.",
-        price: 6,
-      },
-      {
-        id: "m-cheddar",
-        name: "Cheddar Cremoso",
-        description: "Cheddar quentinho servido no potinho para mergulhar.",
-        price: 7,
-      },
+      
     ],
   },
   {
@@ -134,30 +139,27 @@ export const categories: MenuCategory[] = [
     subtitle: "Geladas para acompanhar",
     items: [
       {
-        id: "b-caldo",
-        name: "Caldo de Cana 500ml",
-        description: "Moído na hora, servido bem gelado. Com limão, se preferir.",
-        price: 9,
-        image: bebidasImg,
-      },
-      {
-        id: "b-refri-lata",
-        name: "Refrigerante Lata",
-        description: "Coca-Cola, Guaraná, Fanta ou Sprite.",
-        price: 7,
-      },
-      {
-        id: "b-suco",
-        name: "Suco Natural 400ml",
-        description: "Laranja, maracujá, abacaxi com hortelã ou limonada suíça.",
-        price: 10,
-      },
-      {
-        id: "b-agua",
-        name: "Água Mineral",
-        description: "Com ou sem gás, 500ml.",
+        id: "b-fantaUva-220ml",
+        name: "Fanta Uva 220ml",
+        description: "Refrigerante Fanta Uva, 220ml.",
         price: 5,
+        image: fantaUva,
       },
+      {
+        id: "b-Sprite-220ml",
+        name: "Sprite 220ml",
+        description: "Refrigerante Sprite, 220ml.",
+        price: 5,
+        image: sprite,
+      },
+      {
+        id: "b-Coca-220ml",
+        name: "Coca-Cola 220ml",
+        description: "Refrigerante Coca-Cola, 220ml.",
+        price: 5,
+        image: coca,
+      },
+      
     ],
   },
 ];
