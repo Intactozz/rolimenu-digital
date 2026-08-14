@@ -3,6 +3,7 @@ import fantaUva from "@/assets/fanta-uva.webp";
 import coca from "@/assets/coca-cola.webp";
 import sprite from "@/assets/sprite.webp";
 import carneq from "@/assets/pastel-carne-queijo.png";
+import megaRolih from "@/assets/megaRolih.png";
 import molhoRolih from "@/assets/molho-rolih.png";
 import rolih from "@/assets/pastel-especial-rolih.png";
 import carneovo from "@/assets/pastel-carne-ovo.png";
@@ -111,10 +112,17 @@ export const categories: MenuCategory[] = [
       },
       {
         id: "e-especial-rolih",
-        name: "Mega Rolih",
-        description: "Carne, queijo, frango, ovo, Requeijão e Presunto.",
+        name: "Especial Rolih",
+        description: "Recheio especial com ingredientes premium, feito com carne moída soltinha e bem temperada,ovo cozido no dia e mussarela.",
         price: 20,
         image: rolih,
+      },
+      {
+        id: "e-mega-rolih",
+        name: "Mega Rolih",
+        description: "Recheio especial com Carne, queijo mussarela, frango, ovo cozido no dia, Requeijão e Presunto.",
+        price: 28,
+        image: megaRolih,
       },
     ],
   },
