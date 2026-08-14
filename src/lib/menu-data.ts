@@ -99,7 +99,7 @@ export const categories: MenuCategory[] = [
       {
         id: "e-carne-queijo",
         name: "Carne com Queijo",
-        description: "Carne moída da casa bem temperada com mussarela cremosa.",
+        description: "Carne moída da casa bem temperada com mussarela.",
         price: 18,
         image: carneq,
       },
