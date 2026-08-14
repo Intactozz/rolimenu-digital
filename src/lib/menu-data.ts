@@ -111,8 +111,8 @@ export const categories: MenuCategory[] = [
       },
       {
         id: "e-especial-rolih",
-        name: "Especial Rolih",
-        description: "Recheio especial com ingredientes premium, feito com carne moída soltinha e bem temperada,ovo cozido no dia e mussarela.",
+        name: "Mega Rolih",
+        description: "Carne, queijo, frango, ovo, Requeijão e Presunto.",
         price: 20,
         image: rolih,
       },
